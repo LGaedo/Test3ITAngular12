@@ -19,29 +19,4 @@
     </ul>
 
   </div>
-  <div class="col-md-6">
-    <div *ngIf="currentUser.mail">
-      <h4>User</h4>
-      <div>
-        <label><strong>Mail:</strong></label> {{ currentUser.mail }}
-      </div>
-      <div>
-        <label><strong>Description:</strong></label>
-        {{ currentUser.tipoMusica }}
-      </div>
-      <div>
-        <!-- <label><strong>Status:</strong></label>
-        {{ currentUser.published ? "Published" : "Pending" }} -->
-      </div>
-
-      <a class="badge badge-warning" routerLink="/users/{{ currentUser.mail }}">
-        Edit
-      </a>
-    </div>
-
-    <div *ngIf="!currentUser">
-      <br />
-      <p>Please click on a User...</p>
-    </div>
-  </div>
 </div>

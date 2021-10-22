@@ -2,6 +2,9 @@
 create un registro con email como identificador unico y un campo para ingresar tipo o genero de musica
 
 
+# Bajar desde repositorio gitlab rama llamada 3IT-Angular12:
+git clone https://github.com/LGaedo/Test3ITAngular12/tree/3IT-Angular12
+
 
 ## Servidor de desarrollo
 

@@ -35,5 +35,9 @@
       <h4>Mail de User ya existe intente otro por favor!</h4>
       <button class="btn btn-success" (click)="newUser()">Add</button>
     </div> 
+    <div *ngIf="seccion === 4">
+      <h4>Tipo de música no debe estar vacío!</h4>
+      <button class="btn btn-success" (click)="newUser()">Add</button>
+    </div> 
   </div>
 </div>

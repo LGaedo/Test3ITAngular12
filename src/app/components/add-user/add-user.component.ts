@@ -29,6 +29,16 @@ export class AddUserComponent implements OnInit {
       tipoMusica: this.user.tipoMusica
     };
 
+    if(this.user.tipoMusica === ''){
+      this.submitted = false;
+      this.seccion = 4;
+      this.user = {
+      mail: '',
+      tipoMusica: '',
+      comentario: ''
+      }
+    }else{
+
     this.userService.create(data)
       .subscribe(
         response => {
@@ -46,6 +56,7 @@ export class AddUserComponent implements OnInit {
         error => {
           console.log(error);
         });
+      }
   }
 
   newUser(): void {
